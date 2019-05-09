@@ -4,7 +4,7 @@
 ----
 ## HEBE 是什么 ##
 HEBE是基于NXT开发的区块链系统，公链发行，使用HEBE区块链，你可以基于此平台开发自己的业务系统，如ICO、P2P等业务平台。
-更多信息请访问： http://blockchain.ydwan.com
+更多信息请访问：https://hebeblock.com/
 
 ----
 ## 必备条件 ##
@@ -17,7 +17,7 @@ HEBE是基于NXT开发的区块链系统，公链发行，使用HEBE区块链，
     - *CentOS  - `yum install java-1.8.0-openjdk.x86_64 java-1.8.0-openjdk-devel.x86_64`
 
 ## *源码获取*  ##
-    `git clone https://github.com/slaxman/hebe.git`
+    `git clone https://github.com/HebePlatform/Hebe-Block.git`
   
 ----
 
