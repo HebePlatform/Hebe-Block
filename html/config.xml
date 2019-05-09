@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright © 2013-2016 The Nxt Core Developers.                            ~
+  ~ Copyright © 2016-2017 Jelurida IP B.V.                                         ~
+  ~                                                                           ~
+  ~ See the LICENSE.txt file at the top-level directory of this distribution  ~
+  ~ for licensing information.                                                ~
+  ~                                                                           ~
+  ~ Unless otherwise agreed in a custom licensing agreement with Jelurida B.V.,
+  ~ no part of the Hebe software, including this file, may be copied, modified,~
+  ~ propagated, or distributed except according to the terms contained in the ~
+  ~ LICENSE.txt file.                                                         ~
+  ~                                                                           ~
+  ~ Removal or modification of this copyright notice is prohibited.           ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  * Copyright © 2018-2019 HebeBlock.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<widget id="org.hebe.mobile.wallet" version="1.10.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>HEBE Mobile Wallet</name>
+    <description>
+        Reference implementation mobile wallet for HEBE.
+    </description>
+    <author email="support@hebe.org" href="http://hebe.org/">
+        Riker
+    </author>
+	<version>110.3.0</version>
+    <content src="index.html"/>
+    <access origin="*"/>
+    <preference name="webviewbounce" value="false"/>
+    <preference name="UIWebViewBounce" value="false"/>
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="SplashScreenDelay" value="1000"/>
+    <preference name="FadeSplashScreenDuration" value="5000"/>
+    <preference name="android-minSdkVersion" value="16"/>
+    <preference name="BackupWebStorage" value="none"/>
+    <preference name="SplashScreen" value="screen"/>
+    <preference name="loadUrlTimeoutValue" value="60000"/>
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar"/>
+    </feature>
+    <plugin name="cordova-plugin-device" spec="~1.1.2"/>
+    <plugin name="cordova-plugin-console" spec="~1.0.3"/>
+    <plugin name="cordova-plugin-whitelist" spec="~1.2.2"/>
+    <plugin name="cordova-plugin-splashscreen" spec="~3.2.2"/>
+    <plugin name="cordova-plugin-statusbar" spec="~2.1.3"/>
+    <plugin name="ionic-plugin-keyboard" spec="~2.2.1"/>
+    <platform name="android">
+        <icon src="icons/android/ldpi.png" density="ldpi" />
+		<icon src="icons/android/mdpi.png" density="mdpi" />
+		<icon src="icons/android/hdpi.png" density="hdpi" />
+		<icon src="icons/android/xhdpi.png" density="xhdpi" />
+		<icon src="icons/android/xxhdpi.png" density="xxhdpi" />
+		<icon src="icons/android/xxxhdpi.png" density="xxxhdpi" />
+		<!-- you can use any density that exists in the Android project -->
+		<splash src="icons/screen/android/splash-land-hdpi.png" density="land-hdpi"/>
+		<splash src="icons/screen/android/splash-land-ldpi.png" density="land-ldpi"/>
+		<splash src="icons/screen/android/splash-land-mdpi.png" density="land-mdpi"/>
+		<splash src="icons/screen/android/splash-land-xhdpi.png" density="land-xhdpi"/>
+
+		<splash src="icons/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
+		<splash src="icons/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
+		<splash src="icons/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
+		<splash src="icons/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>
+    </platform>
+</widget>

@@ -1,0 +1,7 @@
+Added firstIndex, lastIndex parameters to the getUnconfirmedTransactions and
+getUnconfirmedTransactionIds APIs to support pagination.
+
+Minor performance optimizations and UI improvements.
+
+Updated H2 to version 1.4.194 and jetty to 9.3.17.
+
