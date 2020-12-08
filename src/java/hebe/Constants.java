@@ -29,7 +29,7 @@ public final class Constants {
     public static final boolean isTestnet = HEBE.getBooleanProperty("hebe.isTestnet");
     public static final boolean isOffline = HEBE.getBooleanProperty("hebe.isOffline");
     public static final boolean isLightClient = HEBE.getBooleanProperty("hebe.isLightClient");
-    public static final int BLOCK_TIME = 60;
+    public static final int BLOCK_TIME = 30;
 
     public static final int MAX_NUMBER_OF_TRANSACTIONS = 512;
     public static final int MIN_TRANSACTION_SIZE = 176;

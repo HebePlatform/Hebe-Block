@@ -1204,13 +1204,14 @@ public final class Account {
     }
 
     public long getEffectiveBalanceHEBE(int height) {
+
         if (this.publicKey == null) {
             this.publicKey = publicKeyTable.get(accountDbKeyFactory.newKey(this));
         }
 
         if (this.publicKey == null || this.publicKey.publicKey == null || height - this.publicKey.height <= 1440) {
              Account genesisAccount = getAccount(id, 0);
-            return genesisAccount == null ? 0 : genesisAccount.getBalanceNQT() / Constants.ONE_HEBE; 
+             return genesisAccount == null ? 0 : genesisAccount.getBalanceNQT() / Constants.ONE_HEBE;
             // cfb: Accounts with the public key revealed less than 1440 blocks ago are not allowed to generate blocks
         }
 
