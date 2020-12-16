@@ -20,7 +20,7 @@ package hebe;
 
 public final class Genesis {
 
-       public static final long GENESIS_BLOCK_ID = 4778288450270685477L;
+       public static final long GENESIS_BLOCK_ID = Long.parseUnsignedLong("12369217048217010520");
        public static final long CREATOR_ID = 1739068987193023818L;
        public static final byte[] CREATOR_PUBLIC_KEY = {
                   18, 89, -20, 33, -45, 26, 48, -119, -115, 124, -47, 96, -97, -128, -39, 102,
